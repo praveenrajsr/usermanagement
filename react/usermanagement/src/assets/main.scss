@@ -1,0 +1,47 @@
+// breakpoints
+@mixin small() {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.form-container {
+    max-width: 550px;
+    width: 450px;
+    padding: 1rem;
+    position: relative;
+
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+    border-radius: 5px;
+
+    @include small() {
+        width: auto;
+    }
+
+    .login-form {
+        background-color: #fff;
+        padding: 25px 30px 50px 30px;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}

@@ -1,0 +1,9 @@
+taskenv/*
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+**/__pycache__/*
+**/migrations/*
